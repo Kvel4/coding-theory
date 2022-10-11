@@ -38,41 +38,41 @@ def griesmer_border(d, n, k):
     return n >= right
 
 
-if __name__ == "__main__":
-    n2 = 12
-    d2 = 5
-    n1 = 19
-    k1 = 9
+if __name__ == "__main__": # пару раз таску зашлите если ответ не полный
+    n1 = 12
+    d1 = 5
+    n2 = 19
+    k2 = 9
 
 
     for i in range(100, 1, -1):
-        if hamming_border(d2, n2, i):
+        if hamming_border(d1, n1, i):
             print("hbd:", i)
             break
 
     for i in range(100, 1, -1):
-        if griesmer_border(d2, n2, i):
+        if griesmer_border(d1, n1, i):
             print("gbd:", i)
             break
 
     for i in range(100, 1, -1):
-        if vg_border(d2, n2, i):
+        if vg_border(d1, n1, i):
             print("vgbd:", i)
             break
 
 
     for i in range(100, 1, -1):
-        if hamming_border(i, n1, k1):
+        if hamming_border(i, n2, k2):
             print("hb:", i)
             break
 
     for i in range(100, 1, -1):
-        if griesmer_border(i, n1, k1):
+        if griesmer_border(i, n2, k2):
             print("gb:", i)
             break
 
 
     for i in range(100, 1, -1):
-        if vg_border(i, n1, k1):
+        if vg_border(i, n2, k2):
             print("vgb:", i)
             break
