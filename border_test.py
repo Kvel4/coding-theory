@@ -1,7 +1,6 @@
 import unittest
 
-from tools.border import gr_find_k_by_n_d, gr_find_d_by_n_k, vg_find_d_by_n_k, vg_find_k_by_n_d, hamming_find_d_by_n_k, \
-    hamming_find_k_by_n_d
+from border import gr_find_k_by_n_d, gr_find_d_by_n_k, vg_find_d_by_n_k, vg_find_k_by_n_d, hamming_find_d_by_n_k, hamming_find_k_by_n_d
 
 
 class BorderTest(unittest.TestCase):
