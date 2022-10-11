@@ -1,10 +1,10 @@
 import numpy as np
 
-from exceptions.exceptions import BadInputException, TaskException, LogicException
-from tools.decoder import decode_by_h_matrix
-from tools.matrixreductions import get_H_matrix_by_G, to_minimal_span_matrix
-from utils.common import to_line
-from utils.read import safe_get_from_file
+from exceptions import BadInputException, TaskException, LogicException
+from decoder import decode_by_h_matrix
+from matrixreductions import get_H_matrix_by_G, to_minimal_span_matrix
+from common import to_line
+from read import safe_get_from_file
 
 
 # @author Geny200
